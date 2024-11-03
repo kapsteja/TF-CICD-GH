@@ -76,7 +76,7 @@ resource "aws_iam_role_policy_attachment" "codepipeline-attach" {
 }
 
 resource "aws_s3_bucket" "artifact_bucket" {
-  bucket = "tds-29062024"
+  bucket = "tds-03112024"
 }
 
 # Optional: Define a bucket policy to control access explicitly
