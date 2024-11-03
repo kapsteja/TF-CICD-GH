@@ -133,8 +133,8 @@ resource "aws_codepipeline" "pipeline" {
       configuration = {
         Repo      = var.github_repo
         Branch    = var.github_branch
-         Owner      = var.github_owner 
-         OAuthToken = data.aws_ssm_parameter.github_token.value
+        Owner      = var.github_owner 
+        OAuthToken = data.aws_ssm_parameter.github_token.value
       }
     }
   }
